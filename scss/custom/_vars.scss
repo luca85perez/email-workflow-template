@@ -1,0 +1,62 @@
+// *******************
+//
+//  TYPE
+//
+// *******************
+// @import url("http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700");
+
+$t-family : 'Ubuntu', sans-serif;
+$t-light  : 300;
+$t-normal : 400;
+$t-medium : 500;
+$t-bold   : 700;
+
+// *******************
+//
+//  SIZES
+//
+// *******************
+$s-main-title    : 29px;
+$s-hero-title    : 36px;
+$s-hero-subtitle : 22px;
+$s-section-title : 18px;
+$s-copy-text     : 16px;
+$s-small-text    : 12px;
+
+$s-lh            : 24px;
+
+// *******************
+//
+//  COLORS
+//
+// *******************
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #e0e0e0;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+
+$c-primary     : #413a4c;
+$c-secondary   : #d76028;
+
+$c-text        : #767676;
+$c-text--light : mix($white, $c-text, 40);
+
+
+
+
+
+

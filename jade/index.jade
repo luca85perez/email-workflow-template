@@ -1,0 +1,258 @@
+include ./mixins/grid.jade
+include ./includes/head.jade
+
+- var desenvolvimento = false;
+if desenvolvimento
+  script(src='//localhost:1337/livereload.js')
+
+
+
+body
+
+  include ./includes/preheader.jade
+
+
+
+  +body
+
+    div(align="center")
+      a(href="%%webversion%%",
+        target="_blank"
+      )
+        font(
+          class="extra-links",
+          face="arial,helvetica,sans-serif",
+          size="1"
+        ) Clique aqui caso não consiga ler esta mensagem
+
+
+
+    +container
+      //-
+      //- LOGO HDW
+      //-
+      +row
+        +wrapper(true)
+          +col('twelve')
+            tr
+              td.center
+                center
+                  img.center.logo(
+                    src="img/logo-hdw.png",
+                    alt="Hotel da WEB"
+                  )
+              +expander
+
+      //-
+      //- HEADLINE
+      //-
+      +row
+        +wrapper(true)
+          +col('twelve')
+            tr
+              td.center
+                center
+                  h1.center.main-title Crie Sites Profissionais e comece a gerar Negócios na Internet
+              +expander
+
+
+      +row
+        +wrapper(true)
+          +col('twelve')
+            tr
+              td.shadow
+                //-
+                //- HERO
+                //-
+                +row
+                  +wrapper(true)
+                    +col('twelve')
+                      tr
+                        td.hero(
+                          background="img/hero-bg.jpg",
+                          valign="top",
+                          bgcolor="#413a4c"
+                        )
+                          +col('twelve')
+                            tr
+                              td
+                                img.hero__icon(
+                                  src="img/icon-construtor.png",
+                                  alt="Construtor de Sites"
+                                )
+                            tr
+                              td
+                                h2.hero__title 15 DIAS GRÁTIS
+                                h3.hero__subtitle Centenas de temas disponíveis
+                        +expander
+
+                //-
+                //- CONTENT
+                //-
+                +row
+                  +wrapper(true)
+                    +col('twelve')
+                      tr
+                        td.content(bgcolor="#ffffff")
+                          +col('twelve')
+                            tr
+                              td
+                                h4.content__title.first Chega de se preocupar com seu web designer
+                            tr
+                              td
+                                p.content__text Com o construtor de sites do Hotel da WEB, você não precisará arcar com elevados custos para ter uma página com um design arrojado e ótima funcionalidade.
+
+                            tr
+                              td
+                                p.content__text Essa ferramenta que roda no novíssimo Windows Server 2012 oferece diversas opções de telas para você customizar e personalizar o conteúdo da forma que você achar melhor, além de poder alterar ou adicionar informações na hora que desejar.
+
+                            tr
+                              td
+                                h4.content__title Crie o seu Site em 3 PASSOS:
+                              +expander
+
+                +row
+                  +wrapper
+                    +col('four')
+                      tr
+                        td.center
+                          img.content__text.center.inline(
+                            src="img/passo-01.png",
+                            alt="Selecione o modelo"
+                          )
+                          p.content__text.featured.center Selecione o modelo
+                        +expander
+
+                  +wrapper
+                    +col('four')
+                      tr
+                        td.center
+                          img.content__text.center.inline(
+                            src="img/passo-02.png",
+                            alt="Edite o layout"
+                          )
+                          p.content__text.featured.center Edite as cores e conteúdo
+                        +expander
+
+                  +wrapper(true)
+                    +col('four')
+                      tr
+                        td.center
+                          img.content__text.center.inline(
+                            src="img/passo-03.png",
+                            alt="Publique o site"
+                          )
+                          p.content__text.featured.center Pronto! Agora é só publicar!
+                        +expander
+
+
+                +row
+                  +wrapper
+                    +col('three')
+                      tr
+                        td &nbsp;
+                        +expander
+
+                  +wrapper
+                    +col('six')
+                      tr
+                        td.button-wrapper
+                          +button
+                            a(
+                              href="http://www.hoteldaweb.com.br/construtor-de-sites",
+                              target="_blank") CONTRATE JÁ
+                        +expander
+
+                  +wrapper(true)
+                    +col('three')
+                      tr
+                        td &nbsp;
+                        +expander
+
+    //-
+    //- FOOTER
+    //-
+    +container
+      +row
+        +wrapper
+          +col('four')
+            tr
+              td
+                img.footer__logo(
+                  src="img/logo-hdw.png",
+                  alt="Hotel da WEB"
+                )
+              +expander
+
+        +wrapper(true)
+          +col('eight')
+            tr
+              td
+                small.footer__copy Hospedagem de sites Linux e Windows, Revenda de Hospedagem, Registro de Domínio, Loja Virtual, E-mail Marketing e Serviços de Internet.
+              +expander
+
+
+    //-
+    //- SOCIAL
+    //-
+    +container
+      +row
+        +wrapper
+          +col('three')
+            tr
+              td &nbsp;
+              +expander
+
+        +wrapper
+          +col('six')
+            tr
+              +sub-col('four')
+                a(
+                  href="http://www.youtube.com/hoteldaweb",
+                  target="_blank"
+                )
+                  img.social__links.align-right(
+                    src="img/icon-youtube.png",
+                    alt="Youtube"
+                  )
+
+              +sub-col('four')
+                a(
+                  href="https://twitter.com/hoteldawebhost",
+                  target="_blank"
+                )
+                  img.social__links.center(
+                    src="img/icon-twitter.png",
+                    alt="Twitter"
+                  )
+
+              +sub-col('four last')
+                a(
+                  href="https://plus.google.com/108331005301113261952/posts",
+                  target="_blank"
+                )
+                  img.social__links(
+                    src="img/icon-gplus.png",
+                    alt="Google Plus"
+                  )
+              +expander
+
+        +wrapper(true)
+          +col('three')
+            tr
+              td &nbsp;
+              +expander
+
+
+
+
+    div(align="center")
+      br
+      a(href="http://%%unsubscribelink%%/",
+        target="_blank"
+      )
+        font(
+          class="extra-links",
+          face="arial,helvetica,sans-serif",
+          size="1"
+        ) Clique aqui para deixar de receber estes e-mails

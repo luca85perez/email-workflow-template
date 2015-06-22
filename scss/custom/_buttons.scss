@@ -1,0 +1,21 @@
+// *******************
+//
+//  BUTTONS
+//
+// *******************
+table.button td a,
+table.tiny-button td a,
+table.small-button td a,
+table.medium-button td a,
+table.large-button td a {
+  display: block !important;
+}
+
+table.button td,
+table.tiny-button td,
+table.small-button td,
+table.medium-button td,
+table.large-button td {
+  transition: all 225ms ease;
+}
+

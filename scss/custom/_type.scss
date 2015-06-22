@@ -1,0 +1,70 @@
+// *******************
+//
+//  TYPE
+//
+// *******************
+body,
+table.body,
+p,
+td {
+  color: $c-text;
+  font-family: $t-family;
+  font-weight: $t-normal;
+  font-size: $s-copy-text;
+  -webkit-font-smoothing: antialiased;
+}
+
+$headings: (
+  'h1': (
+    'font-size': $s-main-title,
+    'font-weight': $t-bold,
+    'color': $c-primary,
+  ),
+
+  'h2': (
+    'font-size': $s-hero-title,
+    'font-weight': $t-bold,
+    'color': $c-primary,
+  ),
+
+  'h3': (
+    'font-size': $s-hero-subtitle,
+    'font-weight': $t-light,
+    'color': $c-primary,
+  ),
+
+  'h4': (
+    'font-size': $s-section-title,
+    'font-weight': $t-medium,
+    'color': $c-primary,
+  ),
+
+  'h5': (
+    'font-size': $s-copy-text,
+    'font-weight': $t-bold,
+    'color': $c-primary,
+    'text-transform': uppercase,
+  ),
+
+  'h6': (
+    'font-size': $s-copy-text,
+    'font-weight': $t-bold,
+    'color': $c-primary,
+    'text-transform': uppercase,
+  )
+);
+
+
+@each $heading, $values in $headings {
+
+  #{$heading},
+  %#{$heading} {
+    font-family: $t-family;
+    -webkit-font-smoothing: antialiased;
+
+    @each $prop, $value in $values {
+      #{$prop}: $value;
+    }
+  }
+
+}

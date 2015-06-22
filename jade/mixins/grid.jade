@@ -1,0 +1,87 @@
+mixin body()
+  table.body
+    tr
+      td.center(align='center', valign='top')
+        center
+          block
+
+
+
+
+mixin container()
+  table.container
+    tr
+      td
+        block
+
+
+
+
+mixin row(effect)
+
+  if effect === 'shadow'
+    table.row.shadow
+      tr
+        block
+  else
+    table.row
+      tr
+        block
+
+
+
+
+
+mixin wrapper(last)
+  if last
+    td.wrapper.last
+      block
+  else
+    td.wrapper
+      block
+
+
+
+
+
+mixin wrapper-offset(num)
+  td(class='wrapper offset-by-' + num)
+    block
+
+
+
+
+
+
+mixin col(num)
+  table(class=num + ' columns')
+    block
+
+
+
+
+
+
+
+mixin sub-col(num)
+  td(class=num + ' sub-columns')
+    block
+
+
+
+
+
+mixin expander()
+  td.expander
+
+
+
+
+
+
+
+mixin button()
+  table.button
+    tr
+      td
+        block

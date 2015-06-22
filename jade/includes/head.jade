@@ -1,0 +1,26 @@
+doctype strict
+
+html(xmlns='http://www.w3.org/1999/xhtml')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(name='viewport', content='width=device-width')
+
+    // - impede o estilo padrão dos dados
+    - var metaDetection = ['telephone=no', 'date=no', 'address=no', 'email=no'];
+    each meta in metaDetection
+      meta(name='format-detection', content=meta)
+
+    title 15 Dias Grátis para Criar seu Site
+
+
+    link(rel="stylesheet", href="./css/ink.css")
+    link(rel="stylesheet", href="./css/custom.css")
+    link(rel="stylesheet", href="./css/responsive.css", data-embed)
+    link(rel="stylesheet", href="./css/web-font.css", data-embed)
+
+    link(
+        href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700',
+        rel='stylesheet',
+        data-embed
+    )
+
