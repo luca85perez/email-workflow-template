@@ -1,8 +1,8 @@
 {
-  "name": "sassy-ink",
-  "version": "0.0.0",
+  "name": "email-workflow-template",
+  "version": "1.0.0",
   "authors": [
-    "Lucas Pereira <lucas.pereira@hoteldaweb.com.br>"
+    "Lucas Pereira <luca85perez@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [

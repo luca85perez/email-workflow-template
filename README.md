@@ -1,15 +1,30 @@
-## Instalação
+## Email Workflow Template
 
-- Instalar o [Node](http://nodejs.org/)
-- Rodar os comandos no terminal
+This is my personal email workflow built with [Zurb Ink](http://zurb.com/ink/), [Sass](http://sass-lang.com/), [Grunt](http://gruntjs.com/) and [Jade](http://jade-lang.com/).
 
-  npm install -g grunt-cli
-  npm install -g bower
-  npm install
-  grunt *ou* grunt build
+**Prerequisites**
 
-### Acesso ao Emkt
+Install [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/).
 
-- [Sistema EMKT](http://projetos.hoteldaweb.com.br/sistemaemkt/admin/)
-- hoteldaweb
-- HdW102030
+Install global dependencies:
+```
+npm install -g grunt-cli bower
+```
+
+Install dependencies:
+```
+npm install
+```
+```
+bower install
+```
+
+Dev Task:
+```
+grunt
+```
+
+Build Task:
+```
+grunt build
+```
